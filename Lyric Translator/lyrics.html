@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lyric.css">
+</head>
+<body>
+    <div id="google_translate_element"></div>
+
+    <div id = 'headerContainer'>
+      
+      <div class = 'notranslate' id = 'pasteMessage'><h2>Paste Lyrics</h2></div>
+      <div id = 'lyricButton'><button>Side by Side Translation</button></div>
+      <div display = 'none' id = 'bringBackBox'><button>Paste New Lyrics</button></div>
+    </div>
+
+    <textarea id = 'lyricBox' type="text" placeholder="Lyrics"></textarea>
+
+  
+    <div id = 'container'>
+    <div class = 'notranslate' id = 'lyricsListSpanish'></div>
+    <div id = lyricsListEnlgish></div>
+    </div>
+
+    
+    <br><br>
+    <h2 class = 'notranslate'>Past Tense(Spanish Endings)</h2>
+    <div id = 'tipsContainer' class = 'notranslate'>
+      <div id = 'preteriteAR'>
+      <table>
+        <tr>
+          <th id = 'header'>Preterite -ar</th>
+          <th id = 'header1'></th>
+        </tr>
+        <tr>
+          <td>é</td>
+          <td>amos</td>
+        </tr>
+        <tr>
+          <td>aste</td>
+          <td>asteis</td>
+        </tr>
+        <tr>
+          <td>ó</td>
+          <td>aron</td>
+        </tr>
+      </table>
+      </div>
+     <div id = 'preteriteER/IR'>
+      <table>
+        <tr>
+            <th id = 'header'>Preterite -er/ir</th>
+            <th id = 'header1'></th>
+          </tr>
+          <tr>
+            <td>í</td>
+            <td>imos</td>
+          </tr>
+          <tr>
+            <td>iste</td>
+            <td>isteis</td>
+          </tr>
+          <tr>
+            <td>ió</td>
+            <td>ieron</td>
+          </tr>
+        </table>
+    </div>
+    
+    <div id = 'imperfectAR'>
+      <table>
+        <tr>
+            <th id = 'header'>Imperfect -ar</th>
+            <th id = 'header1'></th>
+          </tr>
+          <tr>
+            <td>aba</td>
+            <td>ábamos</td>
+          </tr>
+          <tr>
+            <td>abas</td>
+            <td>abais</td>
+          </tr>
+          <tr>
+            <td>aba</td>
+            <td>aban</td>
+          </tr>
+        </table>
+    </div>
+    
+    <div id = 'imperfectER/IR'>
+      <table>
+        <tr>
+            <th id = 'header'>Imperfect -er/ir</th>
+            <th id = 'header1'></th>
+          </tr>
+          <tr>
+            <td>ía</td>
+            <td>íamos</td>
+          </tr>
+          <tr>
+            <td>ías</td>
+            <td>íais</td>
+          </tr>
+          <tr>
+            <td>ía</td>
+            <td>ían</td>
+          </tr>
+        </table>
+    </div>
+    
+    </div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'es',includedLanguages:'en,es'}, 'google_translate_element');
+        }
+        </script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="/lyrics.js"></script>
+</body>
+</html>

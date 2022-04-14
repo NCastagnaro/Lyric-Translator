@@ -1,0 +1,93 @@
+*{
+    background-color: rgb(245, 245, 245);
+}
+#headerContainer {
+    background-color: rgb(245, 245, 245);
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap:10px;
+    grid-auto-rows: 75px;
+    grid-template-areas:
+    "a b c d e f g h i j";     /* you can't have the same letters seperated by anything. Has to be continuous. eg. can't have a a z a b b b c because the z split up the a*/
+   }
+
+#pasteMessage{
+    grid-area: a;
+}
+#lyricButton{
+    grid-area: d;
+    padding-top: 30px;
+}
+#bringBackBox{
+    grid-area: j;
+    padding-top: 30px;
+}
+
+
+
+#lyricBox{
+    height: 500px;
+    width: 600px;
+}
+#tipsContainer{
+    background-color: rgb(230,230,230);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 10px;
+  
+}
+
+
+h1{
+    background-color: rgb(245, 245, 245);
+}
+#container{
+    background-color: rgb(245, 245, 245);
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 20px;
+  
+}
+
+div{
+    font-family: 'New Century Schoolbook';
+    font-size: 18px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+
+  
+}
+
+#header{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    padding: 3px;
+}
+#header1{
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+td{
+    border: 1px solid rgb(0, 0, 0);
+    height: 10px;
+   
+}
+th{
+    text-align: start;
+    height: 20px;
+}
+
+
+
+  tr:nth-child(even) {
+    background-color: rgb(221, 221, 221);
+}
+tr:nth-child(odd) {
+    background-color: rgb(200,200,200);
+}
